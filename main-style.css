@@ -1,0 +1,676 @@
+body {
+  background: #fff;
+}
+
+.mainScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  background: center/100% url('https://fs-thb02.getcourse.ru/fileservice/file/thumbnail/h/b6b631a7ace1a62589844bff6dc25395.png/s/f1200x/a/76255/sc/200') no-repeat;
+  border-radius: 50%;
+  animation: rotation 10s infinite linear;
+  z-index: 99999;
+}
+
+.notShow {
+  opacity: 0;
+  transition: .5s all ease-in-out;
+  z-index: -99;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.page-full-block:before {
+  content: 'MATÜ';
+  position: fixed;
+  bottom: 0;
+  left: 15%;
+  font-size: 300px;
+  font-weight: 900;
+  color: #0000000f;
+  transform: rotate(355deg);
+}
+
+.gc-account-leftbar a.toggle-link.without-icon img {
+  display: none;
+}
+
+.arrow_hide,
+.arrow_show {
+  position: fixed;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #e7ca97;
+  border-radius: 30px;
+  z-index: 120;
+  transition: 1s all ease-in-out;
+}
+
+.arrow_hide {
+  left: 160px;
+  background: 1px 1px/24px url(https://static.thenounproject.com/png/1434370-200.png) no-repeat #fff;
+}
+
+.arrow_show {
+  left: 10px;
+  top: 115px;
+  background: -1px -2px/30px url(https://static.thenounproject.com/png/1434370-200.png) no-repeat #e7ca97;
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.logo.gc-account-logo {
+  width: 100px;
+  height: 100px;
+  background: 0 0/100px url('https://fs-thb02.getcourse.ru/fileservice/file/thumbnail/h/b6b631a7ace1a62589844bff6dc25395.png/s/f1200x/a/76255/sc/200') no-repeat;
+  animation: rotation 20s infinite linear;
+}
+
+.logo-link img {
+  display: none !important;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(-360deg)
+  }
+}
+
+table.stream-table tbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+}
+
+.stream-table tr td {
+  padding-left: 0 !important;
+  transition: .3s all ease-in-out;
+}
+
+.stream-table tr td:hover {
+  background: transparent !important;
+}
+
+.gc-account-leftbar {
+  background: transparent !important;
+  width: auto;
+  z-index: 100;
+  transition: 2s all ease-in-out;
+}
+
+.gc-account-leftbar .gc-account-user-menu li a {
+  width: inherit;
+  height: 55px !important;
+}
+
+.gc-account-leftbar .gc-account-user-menu li a {
+  background: #0000;
+}
+
+.gc-account-leftbar .gc-account-user-menu li a:hover {
+  background-color: #0000;
+}
+
+.gc-account-leftbar .gc-account-user-menu li.active a,
+.gc-account-leftbar .gc-account-user-menu li.selected a {
+  background: #0000;
+}
+
+.gc-account-leftbar li:nth-child(n+2) a img {
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.gc-account-leftbar .notify-count {
+  position: absolute;
+  font-weight: 100;
+  font-size: 12px !important;
+  line-height: 30px !important;
+  background: #d2322d;
+  width: 25px;
+  height: 30px;
+  text-align: center;
+  padding: 0 !important;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  bottom: 12px;
+  right: -26px !important;
+  z-index: 1;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li .notify-count {
+  width: 25px;
+  height: 25px;
+  top: 6px;
+  left: 3px;
+  line-height: 24px !important;
+  border-radius: 25px;
+}
+
+.menu-item.menu-item-notifications_button_small span.notify-count {
+  top: 13px !important;
+}
+
+.gc-account-leftbar a img {
+  border-radius: 35px;
+  position: absolute;
+  left: 100px;
+  border: 3px solid #e7c892;
+  top: 5px;
+  height: 55px;
+  width: 55px;
+}
+
+span.user-image img {
+  margin-bottom: 10px;
+  position: relative !important;
+  left: 0 !important;
+  border-radius: 35px;
+  border: 3px solid #e7c892;
+  height: 55px;
+  width: 55px;
+}
+
+.gc-account-leftbar .gc-account-user-menu li:nth-child(1) a {
+  opacity: 1 !important;
+  background: transparent;
+  position: relative;
+  text-align: left;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.gc-main-content.with-left-menu {
+  margin-left: 200px;
+  transition: 1s all ease-in-out;
+}
+
+.gc-account-leftbar .gc-account-user-menu {
+  padding-left: 20px;
+  padding-right: 30px;
+  margin: 0;
+  background: #f9f0e0;
+  border-radius: 0 30px 30px 0;
+  width: fit-content;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px #cbcbcb;
+}
+
+.gc-account-leftbar .gc-account-user-menu li {
+  width: 150px;
+  height: 55px;
+  border-radius: 15px;
+  background: #ffffff;
+  padding: 0;
+  margin: 5px 0;
+  list-style: none;
+  border-bottom: none;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 6px 9px #0000002e;
+  transition: .2s all ease-in-out;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li {
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 15px;
+  background: #ffffff;
+  width: 90%;
+  list-style: none;
+  border-bottom: none;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 6px 9px #0000002e;
+  transition: .2s all ease-in-out;
+}
+
+li.menu-item:hover {
+  transform: translateY(-6px);
+}
+
+li.menu-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+li.menu-item-chatium_qr {
+  display: none;
+}
+
+li.menu-item.menu-item-profile:before {
+  content: 'ПРОФИЛЬ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-notifications_button_small:before {
+  content: 'УВЕДОМЛЕНИЯ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px !important;
+}
+
+li.menu-item.menu-item-notifications_button_small:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/331/h/ff09de275cf4d1d4320e26fa5eb1aa94.png) no-repeat;
+}
+
+li.menu-item.menu-item-cms:before {
+  content: 'САЙТ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-cms:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/270/h/7ba2334df7985ac4e6878a9d6f93d8bc.png) no-repeat;
+}
+
+li.menu-item.menu-item-teach:before {
+  content: 'ОБУЧЕНИЕ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-teach:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/395/h/157f1f343bb0f685e2fcebfca89f56be.png) no-repeat;
+}
+
+li.menu-item.menu-item-user:before {
+  content: 'ПОЛЬЗОВАТЕЛИ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-user:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/97/h/bfaee36d087271327c8a24f4006b5955.png) no-repeat;
+}
+
+li.menu-item.menu-item-tasks:before {
+  content: 'ЗАДАЧИ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-tasks:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/232/h/db813da01b8ea7d43d1926c75b3f328a.png) no-repeat;
+}
+
+li.menu-item.menu-item-notifications:before {
+  content: 'СООБЩЕНИЯ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-notifications:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/67/h/37252e17ee96c20285d3688eaa867a66.png) no-repeat;
+}
+
+li.menu-item.menu-item-sales:before {
+  content: 'ПРОДАЖИ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-sales:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/248/h/dab10b0e617d98388c973f017a8eee2e.png) no-repeat;
+}
+
+li.menu-item.menu-item-chatium:before {
+  content: 'ПРИЛОЖЕНИЕ';
+  padding-left: 10px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li.menu-item.menu-item-chatium:after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  border-left: 2px solid #ececec;
+  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/398/h/5d6c371fbed9ce2ca6a4d6463954ffde.png) no-repeat;
+}
+
+.gc-account-leftbar .sub-icon {
+  display: none !important;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar div.user-balance {
+  display: none;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li a {
+  margin-bottom: 15px;
+  padding: 10px !important;
+  color: #333 !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar {
+  left: 200px;
+  border-radius: 0 30px 30px 0;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li:hover {
+  transform: translateY(-6px);
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li a:hover {
+  background: transparent;
+}
+
+.lesson-list {
+  margin: 5px auto;
+  max-width: 800px;
+  background: #fff0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.lesson-list li {
+  margin: 20px auto;
+  padding: 35px 24px;
+  width: 170px;
+  height: 110px;
+  position: relative;
+  background: linear-gradient(135deg, #fff5de, #ffd4d4);
+  border-radius: 20px;
+  box-shadow: 0px 6px 9px #0000002e;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+.lesson-list li .item-a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff0;
+}
+.lesson-list li .state-icon-block {
+  display: none;
+}
+.lesson-list li .info {
+  height: 100%;
+  margin-left: 0 !important;
+  border-left: none;
+  background: #fff0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.lesson-list li table {
+  min-width: 75% !important;
+  width: 100% !important;
+}
+.lesson-list li .info .vmiddle {
+  padding-right: 0;
+}
+.lesson-list li .title {
+  margin-right: 0;
+  padding: 5px;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+.stream-table {
+  margin-top: 40px;
+  margin-left: 0;
+}
+.stream-table .stream-title {
+  position: absolute;
+  top: 60px;
+  color: #464542;
+  font-family: muller;
+  font-size: 16px !important;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.stream-table tr.no-public td:before {
+  padding: 5px 15px;
+  content: "НЕ АКТИВЕН";
+  position: absolute;
+  left: 7px;
+  top: 25px;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  background: #f00;
+  color: #fff;
+  border-radius: 7px;
+  transform: rotate(-1deg);
+  z-index: 99;
+  opacity: .5;
+}
+.stream-table tr td:hover {
+  background: #0000 !important;
+}
+.stream-table tbody {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+}
+.stream-table tr {
+  margin: 0 auto;
+  width: 215px;
+  height: 250px;
+  position: relative;
+  background: linear-gradient(135deg, #fff5de, #ffd4d4);
+  border-radius: 20px;
+  box-shadow: 0px 6px 9px #0000002e;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+.stream-table tr:hover {
+  background: linear-gradient(135deg, #ffebbd, #ffd7d7);
+}
+.stream-table tr a div {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px !important;
+  line-height: 1.2;
+  color: #333;
+}
+
+@media(max-width: 425px) {
+  .gc-account-leftbar .gc-account-user-menu {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gc-account-leftbar .gc-account-user-submenu-bar {
+    left: 170px;
+    width: 180px;
+  }
+
+  .gc-account-user-submenu-bar .gc-account-user-submenu li {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gc-main-content.with-left-menu {
+    margin-left: 0 !important;
+  }
+
+  .arrow_hide,
+  .arrow_show {
+    display: none;
+  }
+
+  .gc-page-nav-items-menu a {
+    background: #faf1e0;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .gc-account-leftbar .toggle-link {
+    background: #faf1e0;
+  }
+
+  .gc-account-leftbar .toggle-link {
+    background: 10px 5px/35px url(https://miro.medium.com/max/2400/1*ZPxaxF_SLKckPZRnJZkJjg.png) #faf1e0 no-repeat !important;
+  }
+
+  .gc-account-leftbar .gc-account-user-menu {
+    border-radius: 0;
+  }
+}
+
+.talks-widget-button {
+  color: #c39889;
+  background: linear-gradient(325deg, #faf1e0, #f4e0df);
+}
+
+.talks-widget-button .conversations-counter {
+  top: -16px;
+  left: 30px;
+  padding: 5px 0px !important;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.gc-fade-wrapper .gc-fade {
+  z-index: 50 !important;
+}
