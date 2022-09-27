@@ -1,5 +1,3 @@
-/*MATU STYLE*/
-
 body {
   background: #fff;
 }
@@ -38,6 +36,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(-360deg);
   }
@@ -50,7 +49,7 @@ body {
   left: 15%;
   font-size: 300px;
   font-weight: 900;
-  color: #0000000f;
+  color: #00000008;
   transform: rotate(355deg);
 }
 
@@ -104,17 +103,18 @@ body {
   }
 }
 
-table.stream-table tbody {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 800px;
+.stream-table {
+  margin-left: 0 !important;
+  position: relative;
 }
 
 .stream-table tr td {
   padding-left: 0 !important;
-  transition: .3s all ease-in-out;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: inherit !important;
 }
 
 .stream-table tr td:hover {
@@ -244,7 +244,7 @@ span.user-image img {
   border-bottom: none;
   text-align: center;
   position: relative;
-  box-shadow: 0px 6px 9px #0000002e;
+  box-shadow: 0px 4px 5px #00000017;
   transition: .2s all ease-in-out;
 }
 
@@ -258,12 +258,14 @@ span.user-image img {
   border-bottom: none;
   text-align: center;
   position: relative;
-  box-shadow: 0px 6px 9px #0000002e;
+  box-shadow: 0px 4px 5px #00000017;
   transition: .2s all ease-in-out;
 }
 
-li.menu-item:hover {
-  transform: translateY(-6px);
+li.menu-item:hover,
+.gc-account-user-submenu-bar .gc-account-user-submenu li:hover {
+  background: #ffecdd;
+  box-shadow: 0px 4px 5px #00000040;
 }
 
 li.menu-item {
@@ -306,11 +308,11 @@ li.menu-item.menu-item-notifications_button_small:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/331/h/ff09de275cf4d1d4320e26fa5eb1aa94.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 6px 0px/27px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/206/h/d5db3147e1f626a8e676568b3b48bdd5.png) no-repeat;
+  opacity: .5;
 }
 
 li.menu-item.menu-item-cms:before {
@@ -327,11 +329,11 @@ li.menu-item.menu-item-cms:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/270/h/7ba2334df7985ac4e6878a9d6f93d8bc.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 6px 0px/25px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/331/h/6f34df420cc7d7a5f12bb4fa77144dcd.png) no-repeat;
+  opacity: .5;
 }
 
 li.menu-item.menu-item-teach:before {
@@ -348,11 +350,11 @@ li.menu-item.menu-item-teach:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/395/h/157f1f343bb0f685e2fcebfca89f56be.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 5px 0px/28px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/216/h/f9183cee76372fc8b0c88207c78b49be.png) no-repeat;
+  opacity: .5;
 }
 
 li.menu-item.menu-item-user:before {
@@ -369,11 +371,11 @@ li.menu-item.menu-item-user:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/97/h/bfaee36d087271327c8a24f4006b5955.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 5px 0px/27px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/136/h/b4781148cad8204304f1fc8b15e3f4c3.png) no-repeat;
+  opacity: .5;
 }
 
 li.menu-item.menu-item-tasks:before {
@@ -390,11 +392,11 @@ li.menu-item.menu-item-tasks:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/232/h/db813da01b8ea7d43d1926c75b3f328a.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 4px 0px/27px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/44/h/74f80812ec0900718f6f6c7f11ba0361.png) no-repeat;
+  opacity: .5;
 }
 
 li.menu-item.menu-item-notifications:before {
@@ -411,15 +413,15 @@ li.menu-item.menu-item-notifications:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/67/h/37252e17ee96c20285d3688eaa867a66.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 4px 0px/27px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/100/h/e1706e16d6ef9002f66b5124cde72493.png) no-repeat;
+  opacity: .5;
 }
 
 li.menu-item.menu-item-sales:before {
-  content: 'ПРОДАЖИ';
+  content: 'ПОКУПКИ';
   padding-left: 10px;
   text-align: left;
   position: absolute;
@@ -432,11 +434,11 @@ li.menu-item.menu-item-sales:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/248/h/dab10b0e617d98388c973f017a8eee2e.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 3px 0px/27px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/275/h/6bc91febc101aac432d9ec56f209f403.png) no-repeat;
+  opacity: .5;
 }
 
 li.menu-item.menu-item-chatium:before {
@@ -453,11 +455,11 @@ li.menu-item.menu-item-chatium:after {
   content: '';
   position: absolute;
   right: 3px;
-  top: 10px;
-  width: 35px;
-  height: 35px;
-  border-left: 2px solid #ececec;
-  background: 0px 0px/35px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/398/h/5d6c371fbed9ce2ca6a4d6463954ffde.png) no-repeat;
+  top: 14px;
+  width: 37px;
+  height: 25px;
+  background: 4px 0px/24px url(https://fs.getcourse.ru/fileservice/file/download/a/76255/sc/69/h/b55c00cc0d05b4444a60972c4a1309c4.png) no-repeat;
+  opacity: .5;
 }
 
 .gc-account-leftbar .sub-icon {
@@ -478,28 +480,32 @@ li.menu-item.menu-item-chatium:after {
   cursor: pointer;
 }
 
+.gc-account-user-submenu-bar .gc-account-user-submenu li a:hover {
+  background: transparent;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar div:nth-child(1) {
+  opacity: 0;
+}
+
 .gc-account-leftbar .gc-account-user-submenu-bar {
   left: 200px;
   border-radius: 0 30px 30px 0;
 }
 
-.gc-account-user-submenu-bar .gc-account-user-submenu li:hover {
-  transform: translateY(-6px);
-}
-
-.gc-account-user-submenu-bar .gc-account-user-submenu li a:hover {
-  background: transparent;
-}
-
 .lesson-list {
-  margin: 5px auto;
+  margin: 5px auto !important;
   max-width: 800px;
-  background: #fff0;
+  background: #fff0 !important;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  list-style: none !important;
+  counter-reset: item;
+  list-style-type: none !important;
 }
+
 .lesson-list li {
   margin: 20px auto;
   padding: 35px 24px;
@@ -507,11 +513,12 @@ li.menu-item.menu-item-chatium:after {
   height: 110px;
   position: relative;
   background: linear-gradient(135deg, #fff5de, #ffd4d4);
-  border-radius: 20px;
+  border-radius: 20px !important;
   box-shadow: 0px 6px 9px #0000002e;
   transition: all .2s ease-in-out;
   overflow: hidden;
 }
+
 .lesson-list li .item-a {
   position: absolute;
   left: 0;
@@ -520,14 +527,16 @@ li.menu-item.menu-item-chatium:after {
   height: 100%;
   background: #fff0;
 }
+
 .lesson-list li .state-icon-block {
   display: none;
 }
+
 .lesson-list li .info {
   height: 100%;
   margin-left: 0 !important;
-  border-left: none;
-  background: #fff0;
+  border-left: none !important;
+  background: #fff0 !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -535,36 +544,52 @@ li.menu-item.menu-item-chatium:after {
   align-content: center;
   flex-wrap: wrap;
 }
+
 .lesson-list li table {
   min-width: 75% !important;
   width: 100% !important;
 }
+
 .lesson-list li .info .vmiddle {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
+
 .lesson-list li .title {
-  margin-right: 0;
-  padding: 5px;
-  color: #626262;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: center;
+  margin-right: 0 !important;
+  padding: 5px !important;
+  max-width: 500px !important;
+  color: #626262 !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  line-height: 24px !important;
+  text-align: center !important;
 }
+
+.lesson-list__video-watched {
+  display: none !important;
+}
+
+.lesson-list .user-state-label {
+  display: none !important;
+}
+
 .stream-table {
   margin-top: 40px;
   margin-left: 0;
 }
+
 .stream-table .stream-title {
-  position: absolute;
-  top: 60px;
+  position: relative;
+  top: 55px;
+  max-width: 90%;
   color: #464542;
   font-family: muller;
   font-size: 16px !important;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
-.stream-table tr.no-public td:before {
+
+/*.stream-table tr.no-public td:before {
   padding: 5px 15px;
   content: "НЕ АКТИВЕН";
   position: absolute;
@@ -579,10 +604,12 @@ li.menu-item.menu-item-chatium:after {
   transform: rotate(-1deg);
   z-index: 99;
   opacity: .5;
-}
+}*/
+
 .stream-table tr td:hover {
   background: #0000 !important;
 }
+
 .stream-table tbody {
   margin: 0 auto;
   display: flex;
@@ -591,30 +618,97 @@ li.menu-item.menu-item-chatium:after {
   justify-content: space-around;
   max-width: 800px;
 }
+
 .stream-table tr {
-  margin: 0 auto;
-  width: 215px;
-  height: 250px;
+  margin: 20px auto;
+  width: 310px;
+  height: 200px;
   position: relative;
-  background: linear-gradient(135deg, #fff5de, #ffd4d4);
+  background: linear-gradient(135deg, #fff7e5, #ffd2d2);
   border-radius: 20px;
   box-shadow: 0px 6px 9px #0000002e;
   transition: all .2s ease-in-out;
   overflow: hidden;
 }
+
 .stream-table tr:hover {
-  background: linear-gradient(135deg, #ffebbd, #ffd7d7);
+  box-shadow: 0px 7px 14px #0000003b;
 }
+
+.stream-table tr a {
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+}
+
 .stream-table tr a div {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
+  width: 100%;
+  height: 25px;
   font-size: 14px !important;
   line-height: 1.2;
   color: #333;
 }
 
-@media(max-width: 425px) {
+.stream-table div b {
+  position: absolute;
+  left: 0;
+  bottom: -125px;
+  width: max-content;
+}
+
+table.stream-table tbody {
+  counter-reset: item;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  position: relative;
+}
+
+.stream-table tr:before {
+  content: '' counter(item, decimal-leading-zero);
+  counter-increment: item;
+  color: #d6bbb3;
+  text-align: right;
+  width: 85%;
+  height: 37px;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: muller;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  border-bottom: 1px solid #b1b1b1;
+  z-index: 9;
+}
+
+.info td .user-state-label {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .page-full-block:before {
+    content: 'MATÜ';
+    position: fixed;
+    bottom: 35%;
+    left: 0%;
+    font-size: 19vh;
+    font-weight: 900;
+    color: #0000000f;
+    transform: rotate(355deg);
+  }
+}
+
+@media screen and (max-width: 425px) {
   .gc-account-leftbar .gc-account-user-menu {
     padding-left: 10px;
     padding-right: 10px;
@@ -630,7 +724,7 @@ li.menu-item.menu-item-chatium:after {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .gc-main-content.with-left-menu {
     margin-left: 0 !important;
   }
@@ -657,6 +751,12 @@ li.menu-item.menu-item-chatium:after {
   .gc-account-leftbar .gc-account-user-menu {
     border-radius: 0;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .lesson-list li .vmiddle {
+    margin-left: 0 !important;
+  }  
 }
 
 .talks-widget-button {
